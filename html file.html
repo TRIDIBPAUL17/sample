@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuseStation-Welcome to the world of music</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav>
+        <ul >
+            <li class="brand"><img src="logo.png" alt="MuseStation">MuseStation</li></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="habout.html">About</a></li>
+        </ul>
+    </nav>
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a::after {
+          color:blueviolet;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color:blue;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color:red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+    <div class="container">
+        <div class="songlist">
+            <h1>Top songs of linkin park</h1>
+            <br>
+            <div class="itemSongContainer">
+            <div class="songItem">
+                <img  src="Covers/1.jpeg" alt="1">
+                <span class="songname">Crawling</span>
+                <span class="songlistplay"><span class="timestamp">03:41<i id="1" class="far  songitemplay fa-play-circle" id="masterPlay"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="Covers/2.jpeg" alt="1">
+                <span class="songname">Lost</span>
+                <span class="songlistplay"><span class="timestamp">03:19<i id="2" class="far  songitemplay fa-play-circle" id="masterPlay"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="Covers/3.jpeg" alt="1">
+                <span class="songname">Numb</span>
+                <span class="songlistplay"><span class="timestamp">03:05<i id="3" class="far  songitemplay fa-play-circle" id="masterPlay"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="Covers/4.jpeg"  alt="1">
+                <span class="songname">What I have done</span>
+                <span class="songlistplay"><span class="timestamp">03:27<i id="4" class="far  songitemplay fa-play-circle" id="masterPlay"></i></span></span>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="progress">
+        <div><span id="currenttime">00:00</span></div>
+        <input type="range" id="myprogressbar" min="0" value=0 max="100">
+        <div><span id="totalduration">00:00</span></div>
+    </div>
+    <div class="bottom">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fas fa-1.5x fa-shuffle" id="shuffle" ></i>
+            <i class="fas fa-1.5x fa-step-backward" id="previous" ></i>
+            <i class="far fa-2x fa-play-circle" id="masterplay"></i>
+            <i class="fas fa-1.5x fa-step-forward" id="next"></i> 
+            <i class="fas fa-1.5x fa-repeat" id="repeat"></i>
+
+        </div>
+        <div class="songInfo">
+            <img id="songimage" src="Covers/1.jpeg" alt="" ><span id="displaysongname"></span>
+        </div>
+        <div class="extraicons">
+            <i class="fa-solid fa-microphone-lines"></i>
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-computer"></i>
+            <i class="fas fa-1.5x fa-volume-low" id="mute"></i>
+            <input type="range"  id="volumeslider" min="0" value="20" max="100" >
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3aea65b908.js" crossorigin="anonymous"></script>
+</body>
+</html>
